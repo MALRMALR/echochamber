@@ -4,9 +4,9 @@ $(document).ready(function(){
 	$("#search_button").on("click", function(){
 		var searchTerm = $("#search_term").val();
 		if ($('#artist_button').is(":checked")){
-			var json = 'http://developer.echonest.com/api/v4/artist/search?api_key=5QG70O4GQ9F8TA30Q&format=json&results=15&bucket=video&name='+searchTerm;
+			var json = 'http://developer.echonest.com/api/v4/artist/search?api_key=+api_key+&format=json&results=15&bucket=video&name='+searchTerm;
 		} else {
-			var json = 'http://developer.echonest.com/api/v4/genre/artists?api_key=5QG70O4GQ9F8TA30Q&format=json&results=15&bucket=video&name='+searchTerm;
+			var json = 'http://developer.echonest.com/api/v4/genre/artists?api_key=+api_key+&format=json&results=15&bucket=video&name='+searchTerm;
 		}
 			$.ajax({
 				type: 'GET',
